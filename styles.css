@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f6;
+}
+
+.grid-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .grid-layout {
+    flex-direction: row;
+    height: 100vh;
+  }
+}
+
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.welcome {
+  background: linear-gradient(to bottom, #fbcfe8, #e9d5ff);
+  border-radius: 0;
+  text-align: center;
+}
+
+.app-name {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #7c3aed;
+}
+
+.logo-circle {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #a78bfa;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #7c3aed;
+}
+
+.btn.small {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.btn.editar {
+  background: #93c5fd;
+}
+
+.btn.eliminar {
+  background: #fca5a5;
+}
+
+.registros {
+  background: #fdf4ff;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.registros h2 {
+  color: #a855f7;
+  margin-bottom: 20px;
+}
+
+.registro-lista {
+  width: 100%;
+  max-width: 600px;
+}
+
+.registro {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.registro .emoji {
+  font-size: 2rem;
+}
+
+.registro .descripcion {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.registro .fecha {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.acciones {
+  margin-top: 10px;
+}
